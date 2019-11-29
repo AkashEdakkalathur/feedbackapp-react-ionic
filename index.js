@@ -13,28 +13,32 @@ const Home = () => {
     <>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Ionic Blank</IonTitle>
+          <IonTitle>FeedBack-App</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
      
-        <IonList>
-          <IonItem>
-            <IonCheckbox slot="start" />
-            <IonLabel>
-              <h1>Title</h1>
-              <IonNote>Lorem ipsum dolor sit amet.</IonNote>
-            </IonLabel>
-           <IonBadge color="success" slot="end">
-              5 days
-            </IonBadge>
-          </IonItem>
-        </IonList>
-        <IonFab vertical="bottom" horizontal="end" slot="fixed">
-          <IonFabButton>
-              <IonIcon icon={add} />
-          </IonFabButton>
-        </IonFab> 
+     <ion-list radio-group>
+  <ion-list-header>
+    Language
+  </ion-list-header>
+
+  <ion-item>
+    <ion-label>Go</ion-label>
+    <ion-radio checked="true" value="go"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Rust</ion-label>
+    <ion-radio value="rust"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Python</ion-label>
+    <ion-radio value="python" disabled="true"></ion-radio>
+  </ion-item>
+</ion-list>
+        
       </IonContent>
     </>
   );
