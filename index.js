@@ -25,7 +25,7 @@ const Home = () => {
               <h1>Title</h1>
               <IonNote>Lorem ipsum dolor sit amet.</IonNote>
             </IonLabel>
-            <IonBadge color="success" slot="end">
+           <IonBadge color="success" slot="end">
               5 days
             </IonBadge>
           </IonItem>
