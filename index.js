@@ -9,6 +9,7 @@ import './style.css';
 
 const Home = () => {
   return (
+    
     <>
       <IonHeader>
         <IonToolbar>
